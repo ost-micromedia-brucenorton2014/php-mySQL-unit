@@ -1,19 +1,17 @@
 <?php
-	$output = "connect.php include file accessed<br />";
-	$host = "localhost";
-	$user ="multimedia2015"; //this is the user name given
-	$password = "*****";//replace this with the password
-	$db ="multimedia2015"; //database is the same as the user name for simplicity
-	$mysqli = new mysqli($host, $user, $password, $db);
 	
-	/* check connection */
-	if (mysqli_connect_errno()) {
-		$output .= "connection failed: ". mysqli_connect_error();
-		echo($output);
-		exit();
+	$host = "localhost";
+	$user = "multimedia2015";
+	$password = "****";
+	$db = "multimedia2015";
+
+	$mysqli = new mysqli($host, $user, $password, $db);
+
+	if ($mysqli->connect_error) {
+	    die('Connect Error (' . $mysqli->connect_errno . ') '
+	            . $mysqli->connect_error);
 	}else{
-		$output .= "connected to $db as $user";
-		echo($output);
+		echo("Conected successfully to $db as $user");
 	}
 
 ?>
