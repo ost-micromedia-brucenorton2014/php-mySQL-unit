@@ -34,6 +34,3 @@
 
 </body>
 </html>
-
-</body>
-</html>
