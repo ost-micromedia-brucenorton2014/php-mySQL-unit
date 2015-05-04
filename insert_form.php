@@ -13,24 +13,23 @@
     <section class="row">
       <article class="col-sm-12 ">
 	      <div id="formArea">
-			<h1>insert</h1>
-			<p>insert stuff into the form</p>
-				<form action="insert.php" id="insert form" method="post">
-					<p>
-						<label for="userName">Name</label><br>
-						<input type="text" id="userName" name="userName" placeholder="Name">
-					</p>
-					<p>
-						<label for="userEmail">Email</label><br>
-						<input type="email" id="userEmail" name="userEmail" placeholder="email">
-					</p>
-					<p>
-						<label for="userMessage">Message</label><br>
-						<textarea  id="userMessage" name="userMessage" placeholder="your message"></textarea>
-					</p>
-					<input type="submit" id="submitButton" name="submitButton" value="save info">
-
-				</form>
+					<h1>insert</h1>
+					<p>insert stuff into the form</p>
+					<form action="insert.php" id="insert_form" method="post">
+						<p>
+							<label for="userName">Name</label><br>
+							<input type="text" id="userName" name="userName" placeholder="Name">
+						</p>
+						<p>
+							<label for="userEmail">Email</label><br>
+							<input type="text" id="userEmail" name="userEmail" placeholder="Email">
+						</p>
+						<p>
+							<label for="userMessage">Message</label><br>
+							<textarea id="userMessage" name="userMessage" placeholder="message"></textarea>
+						</p>
+						<input type="submit" id="submitButton" name="submitButton" value="save info">
+					</form>				
 			</div>
  		</article>
     </section>
