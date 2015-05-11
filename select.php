@@ -19,7 +19,7 @@
 		if($displayStmt = $mysqli->prepare($query)){
 			$displayStmt->execute();
 			$displayStmt->store_result();
-			$numrows = $displayStmt->num_rows;
+			$numrows = $displayStmt-> num_rows;
 			echo("<br>results: $numrows");
 
 		}
@@ -34,6 +34,4 @@
 
 </body>
 </html>
-
-</body>
-</html>
+ 

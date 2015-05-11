@@ -28,4 +28,6 @@
 			echo("<br>Oops there was an error: $insertStmt->error");
 			echo("<br>$mysqli->error");
 		}
+		$insertStmt->close();
+		$mysqli->close();
 ?>
