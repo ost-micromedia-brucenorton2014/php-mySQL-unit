@@ -35,3 +35,21 @@ $(document).on('click', '#updateButton', function(event){
 	});
     
 });
+$(document).on('click', '.btn', function(event){
+	event.preventDefault();
+	//get the form data and create a serialized list i.e. userName=Bruce,etc
+	var ID = $(this).attr("data-id");
+	console.log('clicked btn: '+  ID);
+
+    //post the data to the insert.php
+   $(this).parent().fadeOut( "slow", function() {
+		    // Animation complete.
+		 $.post( "delete.php", {ID:ID}, function( data ) {
+	    	//once complete, anything "echoed" in insert.php will replace whatever is in the #formArea
+			$( "#formArea" ).html( data );
+			$( "#formArea" ).fadeIn( "slow", function() {
+			    // Animation complete.
+			});
+		}); 
+	});
+});

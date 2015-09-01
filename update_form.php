@@ -50,7 +50,7 @@
 						</p>
 						<p>
 							<label for="userMessage">Message</label><br>
-							<textarea id="userMessage" name="userMessage" value="<?php echo $messageResult ?>"></textarea>
+							<textarea id="userMessage" name="userMessage"><?php echo $messageResult ?></textarea>
 						</p>
 						<input type="hidden" id="ID" name="ID" value="<?php echo($ID) ?>">
 						<input type="submit" id="updateButton" name="updateButton" value="update info">
